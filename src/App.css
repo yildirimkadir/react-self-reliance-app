@@ -9,6 +9,14 @@
   background-color: brown;
 }
 
+p {
+  font-size: larger;
+  font-weight: 900;
+  background-color: black;
+  width: auto;
+  color: grey;
+}
+
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,6 +33,49 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.result {
+  margin-top: 2rem;
+}
+
+.count,
+.false {
+  background-color: #4CAF50;
+  /* Green */
+  /* border: none; */
+  color: black;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+}
+
+.start,
+.restart {
+  background-color: black;
+  /* Green */
+  /* border: none; */
+  color: #fff;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+}
+
+.count:hover,
+.false:hover {
+  background-color: fff;
+  /* Green */
   color: white;
 }
 

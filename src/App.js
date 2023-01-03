@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -97,12 +97,13 @@ function App() {
     setShow2(!show2)
     getQuestion()
     setData(1)
+    setCount(0)
   }
 
 
 
   const score = () => {
-    return (count * 7 / 10)
+    return ((count / 7).toFixed(2))
   }
 
   console.log(questions[data])
@@ -114,7 +115,7 @@ function App() {
   return (
     <div className="App">
       <h1>Self Reliance Test</h1>
-      <h3>Current Score : {score()} </h3>
+      <h3>Current Score : {score()}</h3>
       <h5>Question {data} out of 7</h5>
       <p>{currentQ.text}</p>
       {currentQ.options?.map((item, index) => {
@@ -126,9 +127,10 @@ function App() {
         )
       }
       )}
-      {show && <button onClick={handleClick}>Start</button>}
+      {show && <button className='start' onClick={handleClick}>Start</button>}
       {show2 ?
-        <button onClick={handleRestart}>Restart</button> : null}
+        <button className='restart' onClick={handleRestart}>Restart</button> : null}
+      <h3 className='result'>You are {score()} Self-Confident</h3>
     </div>
   );
 }
