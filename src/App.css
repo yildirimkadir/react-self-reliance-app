@@ -1,12 +1,13 @@
 .App {
   text-align: center;
-  height: 60vh;
+  height: 70vh;
   width: 40vw;
   border: 2px solid black;
-  border-radius: 30%;
+  border-radius: 20%;
   margin: auto;
   margin-top: 4rem;
   background-color: brown;
+  overflow-wrap: break-word;
 }
 
 p {
@@ -25,7 +26,7 @@ p {
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -34,7 +35,7 @@ p {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .result {
   margin-top: 2rem;

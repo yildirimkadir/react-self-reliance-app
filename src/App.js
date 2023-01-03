@@ -114,7 +114,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Self Reliance Test</h1>
+      <h1 className='header'>Self Reliance Test</h1>
       <h3>Current Score : {score()}</h3>
       <h5>Question {data} out of 7</h5>
       <p>{currentQ.text}</p>
@@ -130,7 +130,7 @@ function App() {
       {show && <button className='start' onClick={handleClick}>Start</button>}
       {show2 ?
         <button className='restart' onClick={handleRestart}>Restart</button> : null}
-      <h3 className='result'>You are {score()} Self-Confident</h3>
+      <h4 className='result'>You are {score()} Self-Confident</h4>
     </div>
   );
 }
