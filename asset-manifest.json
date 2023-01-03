@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-self-reliance-app/static/css/main.b4730ee9.css",
+    "main.js": "/react-self-reliance-app/static/js/main.65fc5d42.js",
+    "index.html": "/react-self-reliance-app/index.html",
+    "main.b4730ee9.css.map": "/react-self-reliance-app/static/css/main.b4730ee9.css.map",
+    "main.65fc5d42.js.map": "/react-self-reliance-app/static/js/main.65fc5d42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4730ee9.css",
+    "static/js/main.65fc5d42.js"
+  ]
+}
